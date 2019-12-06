@@ -40,9 +40,7 @@ import graphql.schema.Coercing;
 import graphql.schema.CoercingSerializeException;
 
 /**
- * Class used to process any incoming message sent by clients via WebSocket
- * supports subprotocols (CBOR, MsgPack, Text)
- * triggers process to indicate outdating queries and notifies clients
+ * Class for testing library graphql scalar type Void
  *
  * @author Michael Schäfer
  * @author Torsten Kühnert

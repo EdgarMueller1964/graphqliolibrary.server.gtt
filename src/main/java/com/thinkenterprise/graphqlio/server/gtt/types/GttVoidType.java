@@ -32,9 +32,7 @@ import graphql.schema.CoercingSerializeException;
 import graphql.schema.GraphQLScalarType;
 
 /**
- * Class used to process any incoming message sent by clients via WebSocket
- * supports subprotocols (CBOR, MsgPack, Text)
- * triggers process to indicate outdating queries and notifies clients
+ * Class used to implement void (no value) for graphql scalar types
  *
  * @author Michael Schäfer
  * @author Torsten Kühnert
