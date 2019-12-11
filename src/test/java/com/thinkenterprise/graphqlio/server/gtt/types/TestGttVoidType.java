@@ -30,10 +30,11 @@ import static org.junit.Assert.assertEquals;
 import java.text.ParseException;
 import java.util.Date;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import graphql.language.StringValue;
 import graphql.schema.Coercing;
@@ -46,7 +47,9 @@ import graphql.schema.CoercingSerializeException;
  * @author Torsten Kühnert
  */
 
-@RunWith(SpringRunner.class)
+@Tag("annotations")
+@Tag("junit5")
+@ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class TestGttVoidType {
 
